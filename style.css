@@ -1,128 +1,238 @@
 /* 全体のベース設定 */
 body {
-    font-family: "Yu Gothic", "Helvetica", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* 全体の余白 */
-  main, section, header, footer, aside, nav {
-    padding: 20px;
-  }
-  
-  /* ヘッダーのデザイン */
-  header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-  }
-  
-  /* ナビゲーションのデザイン */
-  nav {
-    background-color: #eee;
-    padding: 10px 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  nav li {
-    margin-right: 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav a:hover {
-    color: #4CAF50;
-    font-weight: bold;
-  }
-  
-  /* 各セクションの見出し */
-  section h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  }
-  
-  /* 画像の調整 */
-  img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 10px 0;
-  }
-  
-  /* 表（テーブル）のデザイン */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f0f0f0;
-  }
-  
-  /* フォームのスタイル */
-  form {
-    margin-top: 20px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* aside（補足情報） */
-  aside {
-    background-color: #f1f1f1;
-    border-left: 5px solid #4CAF50;
-    margin: 30px 20px;
-    padding: 15px;
-  }
-  
-  /* フッターのスタイル */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-  }
-  
+  /* TODO: フォントを読みやすく設定しよう */
+  font-family: "Yu Gothic", "Helvetica", sans-serif;
+
+  /* TODO: 背景を優しいグレーにして目に優しくしよう */
+  background-color: #f9f9f9;
+
+  /* TODO: 文字色を濃いグレーにして読みやすくしよう */
+  color: #333;
+
+  /* TODO: 行間を少し広めにして可読性アップ */
+  line-height: 1.6;
+
+  /* TODO: ページ全体の外側の余白をなくそう */
+  margin: 0;
+
+  /* TODO: 余白の内側（ボックスの中）も初期化しよう */
+  padding: 0;
+}
+
+/* 各要素に余白をつけて整えましょう */
+main, section, header, footer, aside, nav {
+  /* TODO: セクション内に余白を設定して窮屈感をなくそう */
+  padding: 20px;
+}
+
+/* ヘッダーのデザイン */
+header {
+  /* TODO: 背景色を緑系にして目立たせよう */
+  background-color: #4CAF50;
+
+  /* TODO: 文字を白にしてコントラストを強調しよう */
+  color: white;
+
+  /* TODO: 中央揃えにしよう */
+  text-align: center;
+
+  /* TODO: 上下の余白を増やしてゆとりあるデザインに */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ナビゲーションのデザイン */
+nav {
+  /* TODO: 背景を薄いグレーにしてブロック感を出そう */
+  background-color: #eee;
+
+  /* TODO: 上下左右に少し余白を */
+  padding: 10px 20px;
+}
+
+nav ul {
+  /* TODO: リストの「・」を消して、フラットなデザインに */
+  list-style: none;
+
+  /* TODO: 余白もリセットしよう */
+  padding: 0;
+
+  /* TODO: リンクを横並びに表示させよう */
+  display: flex;
+
+  /* TODO: 画面が狭いとき折り返すようにしよう */
+  flex-wrap: wrap;
+}
+
+nav li {
+  /* TODO: 各リンクに右側の余白をつけよう */
+  margin-right: 15px;
+}
+
+nav a {
+  /* TODO: 下線を消してスッキリ見せよう */
+  text-decoration: none;
+
+  /* TODO: 文字色をダークグレーにして自然な印象に */
+  color: #333;
+
+  /* TODO: フォントを少し太くしてリンクと分かるように */
+  font-weight: 500;
+}
+
+/* ホバー時のナビリンクの変化を設定しましょう */
+nav a:hover {
+  /* TODO: 緑色に変えてアクティブ感を出そう */
+  color: #4CAF50;
+
+  /* TODO: 太字で強調しよう */
+  font-weight: bold;
+
+  /* TODO: 下線を表示してクリックできることを伝えよう */
+  text-decoration: underline;
+}
+
+/* セクションの見出し */
+section h2 {
+  /* TODO: 緑色の下線をつけて見出し感を出そう */
+  border-bottom: 2px solid #4CAF50;
+
+  /* TODO: 下に少し余白を */
+  padding-bottom: 5px;
+
+  /* TODO: 上の余白でセクションの始まりをわかりやすく */
+  margin-top: 30px;
+
+  /* TODO: フォントサイズも調整して大きく目立たせよう */
+  font-size: 1.5em;
+}
+
+/* 画像のスタイルを整える */
+img {
+  /* TODO: 画像の幅がはみ出ないようにする */
+  max-width: 100%;
+
+  /* TODO: 高さは自動調整 */
+  height: auto;
+
+  /* TODO: 薄いグレーの枠線をつけよう */
+  border: 1px solid #ccc;
+
+  /* TODO: 角を少し丸めてやわらかい印象に */
+  border-radius: 4px;
+
+  /* TODO: 上下に余白を追加しよう */
+  margin: 10px 0;
+}
+
+/* 表のスタイルを整える */
+table {
+  /* TODO: 表の横幅を最大にしよう */
+  width: 100%;
+
+  /* TODO: 枠線を重ねて一体化しよう */
+  border-collapse: collapse;
+
+  /* TODO: 上に余白をつけて段落と分けよう */
+  margin-top: 15px;
+}
+
+th, td {
+  /* TODO: 枠線を薄いグレーで表示 */
+  border: 1px solid #ccc;
+
+  /* TODO: セル内の余白を増やして見やすく */
+  padding: 10px;
+
+  /* TODO: 文字を左揃えにしよう */
+  text-align: left;
+}
+
+th {
+  /* TODO: ヘッダー行の背景色を少し明るくして見出し感を出そう */
+  background-color: #f0f0f0;
+}
+
+/* フォームのデザイン */
+form {
+  /* TODO: セクションとの区切りをつける余白 */
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  /* TODO: 幅いっぱいに広げよう */
+  width: 100%;
+
+  /* TODO: 内側に余白をつけよう */
+  padding: 10px;
+
+  /* TODO: 下に余白をつけて要素を離そう */
+  margin-bottom: 15px;
+
+  /* TODO: 枠線を薄く設定 */
+  border: 1px solid #ccc;
+
+  /* TODO: 角を丸めてやさしい見た目に */
+  border-radius: 4px;
+}
+
+button {
+  /* TODO: 背景色を緑系に */
+  background-color: #4CAF50;
+
+  /* TODO: 文字色を白に */
+  color: white;
+
+  /* TODO: 枠線を消してシンプルに */
+  border: none;
+
+  /* TODO: ボタンに余白を追加してクリックしやすく */
+  padding: 10px 20px;
+
+  /* TODO: 角丸にしよう */
+  border-radius: 4px;
+
+  /* TODO: ポインターを指マークに */
+  cursor: pointer;
+}
+
+button:hover {
+  /* TODO: ホバー時に少し濃い緑にして反応を見せよう */
+  background-color: #45a049;
+}
+
+/* aside（補足情報） */
+aside {
+  /* TODO: 背景を少し明るいグレーに */
+  background-color: #f1f1f1;
+
+  /* TODO: 左側に緑色のラインを追加 */
+  border-left: 5px solid #4CAF50;
+
+  /* TODO: 上下の余白をつけて区切りを出そう */
+  margin: 30px 20px;
+
+  /* TODO: 内側の余白 */
+  padding: 15px;
+}
+
+/* フッターのデザイン */
+footer {
+  /* TODO: 背景を濃いグレーに */
+  background-color: #333;
+
+  /* TODO: 文字色を白に */
+  color: white;
+
+  /* TODO: 中央揃えに */
+  text-align: center;
+
+  /* TODO: 上下に余白 */
+  padding: 15px;
+
+  /* TODO: 上との区切りとして上に余白 */
+  margin-top: 40px;
+}
